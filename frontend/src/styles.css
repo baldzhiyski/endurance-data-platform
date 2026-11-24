@@ -1,0 +1,18 @@
+.dashboard { max-width: 56rem; margin: 0 auto; padding: clamp(1rem, 5vw, 3rem); }
+.hero { margin-bottom: 2rem; }
+.hero .page-title { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 750; line-height: 1; letter-spacing: -0.05em; }
+.panel { padding: clamp(1rem, 4vw, 1.75rem); }
+.legend, .session-list { padding: 0; margin: 0; list-style: none; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0.75rem 0 1rem; font-size: 0.875rem; }
+.legend li { display: flex; align-items: center; gap: 0.4rem; }
+.legend i { width: 0.625rem; height: 0.625rem; border-radius: 0.15rem; }
+.bar-list { display: grid; gap: 0.3rem; }
+.week-bar { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr) auto; align-items: center; gap: 0.55rem; border: 1px solid transparent; border-radius: 0.4rem; padding: 0.55rem; color: inherit; background: transparent; cursor: pointer; font: inherit; font-size: 0.875rem; text-align: left; }
+.week-bar:hover { background: #243233; }
+.week-bar[aria-pressed='true'] { border-color: #78965a; background: #243233; }
+.week-bar:focus-visible { outline: 2px solid #c5ee78; outline-offset: 2px; }
+.track { display: flex; gap: 0; height: 0.85rem; background: #314142; overflow: hidden; border-radius: 0.2rem; }
+.session-list { margin-top: 0.75rem; }
+.session-list li { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.65rem 0; border-top: 1px solid #384445; }
+.session-list li > :last-child { text-align: right; }
+.session-list time { font-size: 0.875rem; color: #b6c2c2; }
